@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracción de Precios desde Imagen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Extracción de Precios desde Imagen</h1>
+        <p>Sube una imagen de la etiqueta del producto:</p>
+        <input type="file" id="imageInput" accept="image/*" onchange="processImage(event)">
+        
+        <div id="results">
+            <h2>Precio Detectado:</h2>
+            <p id="priceResult">Esperando...</p>
+        </div>
+    </div>
+
+    <!-- Incluye Tesseract.js desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.4/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

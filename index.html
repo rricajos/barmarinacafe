@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+          * {
+            margin: 0;
+            font-size: 18px;
+          }
+          a {
+            text-decoration: none;
+          }
+          body {
+            font-family: "Poppins", serif;
+            background-color: #eee;
+          }
+          .supercontainer {
+            padding: 1rem;
+            margin: 0 auto;
+            max-width: 1280px;
+            width: 100%;
+          }
+          #superheader {
+            min-height: 90vh;
+            background: repeating-linear-gradient(
+        90deg,
+     
+        #2c3e50,              
+        #2c3e50 5px,          /* Extensión del borde oscuro izquierdo */
+        #3498db 5px,          /* Color más claro en el centro */
+        #3498db 15px,         /* Extensión del centro */
+        #2c3e50 15px,         /* Color oscuro para borde derecho */
+        #2c3e50 20px,         /* Extensión total de la barra */
+
+        /* Espacio entre barras */
+        #ffffff 20px,         /* Color de fondo para espacio */
+        #ffffff 40px          /* Extensión total para espacio y repetición */
+      );
+          #supernav {
+            min-height: 10vh;
+            background-color: #ddd;
+            position: sticky;
+            top: 0;
+
+          }
+          #supernav-r,
+          #supernav-l {
+
+          }
+          .row-nowrap {
+            display: flex;
+            flex-flow: row nowrap;
+          }
+
+          .space-beteween {
+            justify-content: space-between;
+          }
+          .baseline {
+            align-items: baseline;
+          }
+          .col-nowrap {
+            display: flex;
+            flex-flow: column nowrap;
+          }
+          .center {
+            align-items: center;
+            justify-content: center;
+          }
+    </style>
+  </head>
+  <body>
+    <header id="superheader">
+      <div class="supercontainer row-wrap center">
+        <div class="col-nowrap">
+          <h2>El cafe bar más antiguo</h2>
+          <p>Cafe bvar</p>
+        </div>
+      </div>
+    </header>
+    <nav id="supernav">
+      <div class="supercontainer row-nowrap space-beteween baseline">
+        <h1 id="supernav-l">
+          <a href=""> Bar Marina Cafe </a>
+        </h1>
+        <div id="supernav-r" class="row-nowrap" style="gap: 1rem">
+          <a href="#a">Ambiente</a>
+          <a href="#a">Menu y Carta</a>
+          <a href="#a">Contacto</a>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
